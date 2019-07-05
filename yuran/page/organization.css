@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+.container{
+  margin-top: 0;
+}
+#main{
+  background: url(../asetts/logo/logo3.png) center center / contain  no-repeat;
+  height: 400px;
+}
+#title{
+  margin-bottom: 30px;
+  border-bottom: solid 1px #000;
+}
+#title,.info{
+  text-align: center;
+}
+.info h2{
+  margin-top: 30px;
+}
+
+#form{
+  margin-top: 90px;
+}
+#form table{
+  width: 100%;
+  border-collapse: collapse;
+}
+#form table tr{
+  border-top: dotted 1px #eaecec;
+  border-bottom: dotted 1px #eaecec;
+}
+#form table th,#form table td{
+  padding: 30px 0;
+  font-weight: 200;
+  text-align: left;
+}
+#form table th{
+  width: 300px;
+}
+input,select,textarea{
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+#form .name input,#form .tel input{
+  width: 200px;
+}
+#form .button{
+  text-align: center;
+}
+#form input[type=submit]{
+  width: 150px;
+  margin-top: 30px;
+  font-size: 1.5em;
+  background: #fff;
+  border: solid 1px #000;
+}
+#form input[type=submit]:hover{
+  opacity: .6;
+  transition: all .5s 0s ease;
+}
+
+footer{
+  background: none;
+}
+footer #copy{
+  margin-top: 60px;
+}
+
+@media(max-width:768px) {
+  #main{
+    height: 200px;
+  }
+  .container{
+    width: 95%;
+  }
+  #form table th{
+    width: 120px;
+  }
+  #form .name input, #form .tel input {
+    width: 49%;
+  }
+  #form .tel input {
+    width: 31%;
+  }
+}

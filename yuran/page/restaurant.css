@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+#main{
+  background:url(../asetts/image/3restaurant/main3.png) center center / 30% no-repeat, url(../asetts/image/3restaurant/img3.jpg) top center / cover no-repeat;
+  height: 400px;
+  margin-top: 60px;
+}
+
+#breakfast{
+  margin-top: 90px;
+}
+.title{
+  max-idth: 300px;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 40px;
+  line-height: 2em;
+  border-radius: 10px;
+  border: solid 1px #000;;
+}
+span{
+  display: block;
+  font-size: 1.3rem;
+}
+h2 span{
+  display: inline;
+  margin-left: 20px;
+}
+
+.menu .food p{
+  border-top: solid 1px #000;
+}
+#breakfast .menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#breakfast .menu figure{
+  width: 50%;
+  padding-right: 60px;
+}
+#breakfast .menu figure:last-child{
+  padding-right: 0;
+}
+#breakfast .menu figure img{
+  width: 100%;
+}
+#breakfast .menu figure p{
+  margin-bottom: 20px;
+}
+#breakfast .menu figure li{
+  line-height: 2em;
+}
+
+#lunch{
+  margin-top: 90px;
+  text-align: center;
+}
+#lunch .menu{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#lunch .menu .food{
+  width: 300px;
+  border: solid 1px #000;
+}
+#lunch .menu .food img{
+  width: 100%;
+}
+
+#dinner{
+  margin-top: 90px;
+  text-align: center;
+}
+#dinner .menu{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#dinner .menu .food{
+  width: 300px;
+  border: solid 1px #000;
+}
+#dinner .menu .food img{
+  width: 100%;
+}
+
+#organization{
+  width: 700px;
+  margin: auto;
+  margin-top: 90px;
+}
+#organization img{
+  width: 100%;
+  margin-bottom: 20px;
+}
+#organization p{
+  margin-bottom: 20px;
+}
+#organization span{
+  text-align: center;
+}
+
+@media(max-width:768px) {
+  #main{
+    height: 200px;
+  }
+  .container{
+    width: 95%;
+  }
+  #info p:last-child {
+    text-align: center;
+  }
+  #info{
+    width: 100%;
+  }
+  #organization {
+    width: 100%;
+  }
+  #breakfast .menu,#lunch .menu,#dinner .menu {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  #breakfast .menu figure {
+    width: 100%;
+    padding-right: 0;
+  }
+  #breakfast .menu{
+    text-align: center;
+  }
+  #breakfast .menu ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #lunch .menu .food,#dinner .menu .food{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

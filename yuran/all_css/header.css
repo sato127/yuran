@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-size: 1.4em;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 200;
+}
+p{
+  line-height: 2.8rem;
+}
+img,iframe{
+  vertical-align: bottom;
+}
+a:hover{
+  opacity: .6;
+  transition: all .5s 0s ease;
+}
+nav a{
+  display: block;
+}
+ul{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header{
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 10000;
+}
+h1{
+  height: 60px;
+}
+h1 img{
+  height: 100%;
+  width: auto;
+}
+h2,h3{
+  font-weight: 300;
+}
+header,nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li{
+  margin: 0 30px;
+}
+.container{
+  width: 960px;
+  margin: auto;
+  margin-top: 90px;
+}
+
+#info{
+  width: 700px;
+  margin: auto;
+}
+#info h2{
+  text-align: center;
+}
+#info span{
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#info p:last-child {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media(max-width:768px) {
+  /*------------------ハンバーガーメニュー*/
+
+  header{
+    display: block;
+  }
+  header nav{
+    display: none;
+    padding-bottom: 400px;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  header nav ul{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+  header nav ul li{
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #eaecec;
+    padding: 15px 0;
+  }
+  header nav ul li:last-child{
+    border: none;
+  }
+  header nav ul li a{
+    display: block;
+  }
+  header h1{
+    position: relative;
+  }
+  #hamburger{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    z-index: 100;
+  }
+  #hamburger div {
+    position: relative;
+  }
+  #hamburger span{
+    display: block;
+    height: 3px;
+    background: #000;
+    position:absolute;
+    width: 100%;
+    left: 0;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    padding-left: 0;
+  }
+  #hamburger span:nth-child(1){
+    top:0px;
+  }
+  #hamburger span:nth-child(2){
+    top:12px;
+  }
+  #hamburger span:nth-child(3){
+    top:24px;
+  }
+	/*開閉ボタンopen時*/
+  .open #hamburger span:nth-child(1) {
+    top: 12px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  .open #hamburger span:nth-child(2) {
+    width: 0;
+    left: 50%;
+    }
+    .open #hamburger span:nth-child(3) {
+      top: 12px;
+      -webkit-transform: rotate(-135deg);
+      -moz-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+    }
+}
